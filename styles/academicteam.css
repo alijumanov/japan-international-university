@@ -1,0 +1,110 @@
+.AcademicTeam {
+    padding-top: 5vw;
+}
+
+.AcademicTeam .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.AcademicTeam .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AcademicTeam .head .links {
+    display: flex;
+    align-items: center;
+}
+
+.AcademicTeam .head .links .foot-text {
+    color: #8F8F8F;
+}
+
+.AcademicTeam .head .links .foot-text:hover {
+    color: #2B82BC;
+}
+
+.AcademicTeam .head .links span {
+    width: 4px;
+    height: 4px;
+    background-color: #8F8F8F;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.AcademicTeam .wrapper .infos {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+}
+
+.AcademicTeam .wrapper .infos .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.AcademicTeam .wrapper .infos .info img {
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #EAEAEA;
+}
+
+.AcademicTeam .wrapper .infos .info .text {
+    font-weight: 700;
+    color: #2B82BC;
+    margin-bottom: -10px;
+}
+
+.AcademicTeam .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AcademicTeam .btns .explore {
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #2B82BC;
+}
+
+@media (max-width:767px) {
+    .AcademicTeam {
+        padding-top: 21vw;
+    }
+
+    .AcademicTeam .head {
+        gap: 6vw;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .AcademicTeam .head .sub-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .AcademicTeam .wrapper .infos {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width:500px) {
+    .AcademicTeam .wrapper .infos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .AcademicTeam .wrapper .infos .info .text {
+        font-size: 6vw;
+    }
+
+    .AcademicTeam .wrapper .infos .info .foot-text {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+}

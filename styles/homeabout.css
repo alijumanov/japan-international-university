@@ -1,0 +1,53 @@
+.HomeAbout .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeAbout .wrapper .line {
+    width: 13vw;
+    height: 2px;
+    margin: 1vw 0;
+    background-color: #E6E8EC;
+}
+
+.HomeAbout .wrapper .nav-text {
+    font-weight: 400;
+    color: #656B70;
+}
+
+.HomeAbout .info {
+    display: flex;
+    /* margin-top: 1vw; */
+    padding: 12vw 25vw;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.HomeAbout .info .back-img {
+    z-index: -1;
+}
+
+.HomeAbout .info .sub-title {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.HomeAbout .info .explore {
+    color: black;
+    background-color: white;
+}
+
+@media (max-width:767px) {
+    .HomeAbout .wrapper .line {
+        width: 30vw;
+        height: 1px;
+    }
+
+    .HomeAbout .info {
+        gap: 6vw;
+        padding: 40vw 13vw;
+    }
+}

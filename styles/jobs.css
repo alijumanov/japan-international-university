@@ -1,0 +1,157 @@
+.Jobs {
+    padding-top: 5vw;
+    background-color: black;
+}
+
+.Jobs .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Jobs .sub-title {
+    color: white;
+}
+
+.Jobs .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Jobs .head .links {
+    display: flex;
+    align-items: center;
+}
+
+.Jobs .head .links .foot-text {
+    color: white;
+}
+
+.Jobs .head .links .foot-text:hover {
+    color: #2B82BC;
+}
+
+.Jobs .head .links span {
+    width: 4px;
+    height: 4px;
+    background-color: #8F8F8F;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.Jobs .wrapper .infos {
+    display: flex;
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    flex-direction: column;
+    background-color: #12191D;
+}
+
+.Jobs .wrapper .infos .nav-text {
+    font-weight: 400;
+    padding-right: 50%;
+}
+
+.Jobs .infos .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.Jobs .infos .cards .info {
+    display: flex;
+    overflow: hidden;
+    padding-top: 1vw;
+    position: relative;
+    border-radius: 2.5vw;
+    -webkit-border-radius: 2.5vw;
+    -moz-border-radius: 2.5vw;
+    -ms-border-radius: 2.5vw;
+    -o-border-radius: 2.5vw;
+    justify-content: center;
+    background: linear-gradient(120.39deg, #4F5254 7.68%, #62676B 18.95%, #6F777C 29.5%, #888889 44.68%, #7B858B 54.43%, #757D83 66.72%, #6B7276 81.3%, #4F5254 95.78%);
+}
+
+.Jobs .infos .cards .info .icon {
+    top: 2vw;
+    right: 2vw;
+    width: 4vw;
+    position: absolute;
+}
+
+.Jobs .infos .nav-title {
+    color: white;
+}
+
+.Jobs .infos .cards .info .img {
+    max-width: 60%;
+    min-width: 60%;
+}
+
+.Jobs .infos .cards .info .nav-title {
+    bottom: 0;
+    width: 100%;
+    height: 5vw;
+    padding-top: 2vw;
+    text-align: center;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(71, 78, 82, 0) 0%, #373D40 100%);
+}
+
+@media (max-width:767px) {
+    .Jobs {
+        padding-top: 21vw;
+    }
+
+    .Jobs .head {
+        gap: 6vw;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .Jobs .head .sub-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .Jobs .wrapper .infos .nav-text {
+        padding-right: 0;
+    }
+
+    .Jobs .wrapper .infos {
+        border-radius: 6vw;
+        -webkit-border-radius: 6vw;
+        -moz-border-radius: 6vw;
+        -ms-border-radius: 6vw;
+        -o-border-radius: 6vw;
+    }
+
+    .Jobs .infos .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Jobs .infos .cards .info {
+        padding-top: 2vw;
+        border-radius: 5vw;
+        -webkit-border-radius: 5vw;
+        -moz-border-radius: 5vw;
+        -ms-border-radius: 5vw;
+        -o-border-radius: 5vw;
+    }
+
+    .Jobs .infos .cards .info .nav-title {
+        height: 10vw;
+    }
+
+    .Jobs .infos .cards .info .icon {
+        top: 4vw;
+        right: 4vw;
+        width: 10vw;
+    }
+}

@@ -1,0 +1,296 @@
+.DirectHeader {
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+.DirectHeader .wrapper {
+    gap: 2vw;
+    z-index: 3;
+    display: flex;
+    position: sticky;
+    min-height: 90vh;
+    padding-right: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.DirectHeader .title {
+    color: white;
+}
+
+.DirectFaculty {
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+
+.DirectFaculty .wrapper {
+    display: flex;
+    padding-top: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DirectFaculty .wrapper .categories {
+    gap: 1vw;
+    display: flex;
+    margin-top: -3vw;
+    padding: 0.7vw 3vw;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: flex-start;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
+}
+
+.DirectFaculty .wrapper .categories .logo {
+    max-width: 8vw;
+    min-width: 8vw;
+    margin-right: 2vw;
+}
+
+.DirectFaculty .wrapper .categories .explore {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #8F8F8F;
+    background-color: transparent;
+}
+
+.DirectFaculty .wrapper .categories .explore.active-fac {
+    color: white;
+    background-color: #BA3139;
+}
+
+.DirectFaculty .wrapper .infos {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DirectFaculty .wrapper .infos.active-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DirectFaculty .wrapper .infos img {
+    max-width: 55%;
+    min-width: 55%;
+}
+
+.DirectFaculty .wrapper .infos .texts {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.DirectFaculty .wrapper .infos .texts .nav-text {
+    font-weight: 400;
+    color: #2A2C2A;
+}
+
+.DirectFaculty .wrapper .infos .texts .explore {
+    color: white;
+    font-weight: 700;
+    background-color: #2B82BC;
+}
+
+.DirectAdv .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.DirectAdv .wrapper .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.DirectAdv .wrapper .info img {
+    max-width: 4vw;
+    min-width: 4vw;
+}
+
+.DirectAdv .wrapper .info .nav-title {
+    padding: 0 3vw;
+    color: #2B82BC;
+    text-align: center;
+}
+
+.DirectAdv .wrapper .info .nav-text {
+    font-weight: 400;
+    color: #2A2C2A;
+    text-align: center;
+}
+
+.DirectAbout .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.DirectAbout .nav-text {
+    font-weight: 400;
+    color: #656B70;
+}
+
+.DirectAbout .wrapper .line {
+    width: 13vw;
+    height: 2px;
+    margin: 1vw 0;
+    background-color: #E6E8EC;
+}
+
+.DirectAny .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DirectAny .wrapper .left-img {
+    max-width: 35%;
+    min-width: 35%;
+}
+
+.DirectAny .wrapper .infos {
+    width: 60%;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.DirectAny .wrapper .infos .info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+}
+
+.DirectAny .wrapper .infos .info img {
+    opacity: 0.2;
+    max-width: 5vw;
+    min-width: 5vw;
+}
+
+.DirectAny .wrapper .infos .info .min-title {
+    color: #2B82BC;
+}
+
+.DirectAny .wrapper .infos .info .nav-text {
+    font-weight: 400;
+    color: #2A2C2A;
+}
+
+.DirectAny .wrapper .infos .right-img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.DirectAny .wrapper .left-img.ver2 {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .DirectHeader .wrapper {
+        gap: 4vw;
+        min-height: 470px;
+        padding-right: 15vw;
+        padding-bottom: 15vw;
+        justify-content: flex-end;
+    }
+
+    .DirectFaculty .wrapper .categories {
+        margin-top: 0;
+        padding: 2vw 5vw;
+        overflow-x: auto;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        width: calc(100% + 10vw);
+    }
+
+    .DirectFaculty .wrapper .categories .explore {
+        min-width: 40%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .DirectFaculty .wrapper .categories .logo {
+        display: none;
+    }
+
+    .DirectFaculty .wrapper .infos {
+        gap: 5vw;
+        flex-direction: column-reverse;
+    }
+
+    .DirectFaculty .wrapper .infos img {
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100vw;
+        min-height: 100vw;
+        object-fit: cover;
+    }
+
+    .DirectFaculty .wrapper .infos .texts {
+        width: 100%;
+    }
+
+    .DirectAdv .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .DirectAdv .wrapper .info img {
+        max-width: 10vw;
+        min-width: 10vw;
+    }
+
+    .DirectAdv .wrapper .info .nav-title {
+        padding: 0 22vw;
+    }
+
+    .DirectAdv .wrapper .info .nav-text {
+        padding: 0 5vw;
+    }
+
+    .DirectAbout .wrapper .line {
+        width: 30vw;
+        height: 1px;
+    }
+
+    .DirectAny .wrapper {
+        gap: 5vw;
+        padding: 5vw 8vw;
+        flex-direction: column;
+    }
+
+    .DirectAny .wrapper .left-img.ver1 {
+        display: none;
+    }
+
+    .DirectAny .wrapper .left-img.ver2 {
+        display: block;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .DirectAny .wrapper .infos {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .DirectAny .wrapper .infos .info img {
+        max-width: 17vw;
+        min-width: 17vw;
+    }
+}

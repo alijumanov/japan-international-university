@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Yo'nalishlar</title>
+
+    <!-- all pages css -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/directions.css">
+    <link rel="stylesheet" href="./styles/homeabout.css">
+    <link rel="stylesheet" href="./styles/edupost.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <!-- all pages css -->
+</head>
+
+<body>
+
+    <div id="light-navbar" class="Navbar" style="background: transparent;">
+        <a href="/index.html" class="logo">
+            <img src="./images/logo.png" alt="logo" class="img">
+        </a>
+        <div class="nav-links">
+            <div class="nav-text">
+                JIUda Ta’lim <img src="./images/down.png" alt="down">
+                <div class="childs">
+                    <div class="values round">
+                        <a href="/edusystem.html" class="text">Ta’lim tizimi</a>
+                        <a href="/directions.html" class="text">Yo‘nalishlar</a>
+                        <a href="/edutype.html" class="text">Kunduzgi ta’lim</a>
+                        <a href="/edutype.html" class="text">Kechki ta’lim</a>
+                        <a href="/edutype.html" class="text">Sirtqi ta’lim</a>
+                        <a href="/payment.html" class="text">To’lovlar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-text">
+                Biz haqimizda <img src="./images/down.png" alt="down">
+                <div class="childs">
+                    <div class="values round">
+                        <a href="/about.html" class="text">Nima uchun JIU</a>
+                        <a href="/academicteam.html" class="text">Akademik jamoa</a>
+                        <a href="/academicteam.html" class="text">Administrativ jamoa</a>
+                        <a href="#" class="text">Litsenziya</a>
+                        <a href="/jobs.html" class="text">Bo’sh ish o’rinlari</a>
+                        <a href="/communicate.html" class="text">Biz bilan bog’laning</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-text">
+                Qabul <img src="./images/down.png" alt="down">
+                <div class="childs">
+                    <div class="values round">
+                        <a href="/application.html" class="text">Ariza to‘ldirish</a>
+                        <a href="#" class="text">Kirish imtihoni</a>
+                        <a href="#grant" class="text">Grantlar</a>
+                        <a href="#" class="text">O‘qishni ko’chirsh</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-text">
+                Imkoniyatlar <img src="./images/down.png" alt="down">
+                <div class="childs">
+                    <div class="values round">
+                        <a href="/chances.html" class="text">Karyera markazi</a>
+                        <a href="#" class="text">Shaxsiy rivojlanish</a>
+                        <a href="#active-edu" class="text">Faol talabalik hayoti</a>
+                        <a href="#" class="text">AQSHda Work&Travel</a>
+                        <a href="#" class="text">Yaponiyada Work&Study</a>
+                        <a href="/jobs.html" class="text">Ish bilan ta’minlash</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-tools">
+            <a href="tel:+998712030220" class="tel-btn nav-text">+(998) 71 203 02 20</a>
+            <div class="menu" onclick="showModal(true)">
+                <img src="./images/menu.png" alt="menu">
+            </div>
+        </div>
+        <div class="nav-modal">
+            <div class="top-val nv1">
+                <div class="langs">
+                    <button onclick="changeLang('uz')" class="lang nav-text active-lang">Uz</button>
+                    <button onclick="changeLang('ru')" class="lang nav-text">Ru</button>
+                    <button onclick="changeLang('en')" class="lang nav-text">Eng</button>
+                </div>
+                <div class="right-tools">
+                    <div class="close nav-title" onclick="showModal(false)">X</div>
+                </div>
+            </div>
+            <div class="result round">
+                <img src="./images/decor.png" alt="decor" class="decor">
+                <div class="explore qabul">Qabul</div>
+                <h1 class="nav-title">Yapon standartlariga asoslangan zamonaviy universitet</h1>
+                <p class="nav-text rt active-text">
+                    Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                    universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori saviyali
+                    mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan "amaliyotda
+                    qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va seminarlar o’z sohasida
+                    katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir1
+                </p>
+                <p class="nav-text rt">
+                    Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                    universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori saviyali
+                    mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan "amaliyotda
+                    qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va seminarlar o’z sohasida
+                    katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir2
+                </p>
+                <p class="nav-text rt">
+                    Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                    universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori saviyali
+                    mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan "amaliyotda
+                    qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va seminarlar o’z sohasida
+                    katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir3
+                </p>
+                <p class="nav-text rt">
+                    Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                    universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori saviyali
+                    mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan "amaliyotda
+                    qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va seminarlar o’z sohasida
+                    katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir4
+                </p>
+                <a href="/application.html" class="explore yozilish">Qabulga yozilish</a>
+            </div>
+            <div class="values">
+                <div>
+                    <div class="top-val nv2">
+                        <div class="langs">
+                            <button onclick="changeLang('uz')" class="lang nav-text active-lang">Uz</button>
+                            <button onclick="changeLang('ru')" class="lang nav-text">Ru</button>
+                            <button onclick="changeLang('en')" class="lang nav-text">Eng</button>
+                        </div>
+                        <div class="right-tools">
+                            <a href="tel:+998712030220" class="tel-btn nav-text">+(998) 71 203 02 20</a>
+                            <div class="close nav-title" onclick="showModal(false)">X</div>
+                        </div>
+                    </div>
+                    <div class="middle-val">
+                        <div class="left">
+                            <a href="#" onclick="changeTitle('n1')" class="nt nav-title active-title">
+                                JIU ta’lim <span class="plus">+</span> <span class="minus">-</span>
+                            </a>
+                            <div class="right rrt rv2 active-right">
+                                <a href="/edusystem.html" class="text">Ta’lim tizimi</a>
+                                <a href="/directions.html" class="text">Yo‘nalishlar</a>
+                                <a href="/edutype.html" class="text">Kunduzgi ta’lim</a>
+                                <a href="/edutype.html" class="text">Kechki ta’lim</a>
+                                <a href="/edutype.html" class="text">Sirtqi ta’lim</a>
+                                <a href="/payment.html" class="text">To’lovlar</a>
+                            </div>
+                            <a href="#" onclick="changeTitle('n2')" class="nt nav-title">
+                                Biz haqimizda <span class="plus">+</span> <span class="minus">-</span>
+                            </a>
+                            <div class="right rrt rv2">
+                                <a href="/about.html" class="text">Nima uchun JIU</a>
+                                <a href="/academicteam.html" class="text">Akademik jamoa</a>
+                                <a href="/academicteam.html" class="text">Administrativ jamoa</a>
+                                <a href="#" class="text">Litsenziya</a>
+                                <a href="/jobs.html" class="text">Bo’sh ish o’rinlari</a>
+                                <a href="/communicate.html" class="text">Biz bilan bog’laning</a>
+                            </div>
+                            <a href="#" onclick="changeTitle('n3')" class="nt nav-title">
+                                Qabul <span class="plus">+</span> <span class="minus">-</span>
+                            </a>
+                            <div class="right rrt rv2">
+                                <a href="/application.html" class="text">Ariza to‘ldirish</a>
+                                <a href="#" class="text">Kirish imtihoni</a>
+                                <a href="/index.html#grant" class="text">Grantlar</a>
+                                <a href="#" class="text">O‘qishni ko’chirsh</a>
+                            </div>
+                            <a href="#" onclick="changeTitle('n4')" class="nt nav-title">
+                                Imkoniyatlar <span class="plus">+</span> <span class="minus">-</span>
+                            </a>
+                            <div class="right rrt rv2">
+                                <a href="/chances.html" class="text">Karyera markazi</a>
+                                <a href="#" class="text">Shaxsiy rivojlanish</a>
+                                <a href="/index.html#active-edu" class="text">Faol talabalik hayoti</a>
+                                <a href="#" class="text">AQSHda Work&Travel</a>
+                                <a href="#" class="text">Yaponiyada Work&Study</a>
+                                <a href="/jobs.html" class="text">Ish bilan ta’minlash</a>
+                            </div>
+                        </div>
+                        <div class="right rrt rv1 active-right">
+                            <a href="/edusystem.html" class="text">Ta’lim tizimi</a>
+                            <a href="/directions.html" class="text">Yo‘nalishlar</a>
+                            <a href="/edutype.html" class="text">Kunduzgi ta’lim</a>
+                            <a href="/edutype.html" class="text">Kechki ta’lim</a>
+                            <a href="/edutype.html" class="text">Sirtqi ta’lim</a>
+                            <a href="/payment.html" class="text">To’lovlar</a>
+                        </div>
+                        <div class="right rrt rv1">
+                            <a href="/about.html" class="text">Nima uchun JIU</a>
+                            <a href="/academicteam.html" class="text">Akademik jamoa</a>
+                            <a href="/academicteam.html" class="text">Administrativ jamoa</a>
+                            <a href="#" class="text">Litsenziya</a>
+                            <a href="/jobs.html" class="text">Bo’sh ish o’rinlari</a>
+                            <a href="/communicate.html" class="text">Biz bilan bog’laning</a>
+                        </div>
+                        <div class="right rrt rv1">
+                            <a href="/application.html" class="text">Ariza to‘ldirish</a>
+                            <a href="#" class="text">Kirish imtihoni</a>
+                            <a href="/index.html#grant" class="text">Grantlar</a>
+                            <a href="#" class="text">O‘qishni ko’chirsh</a>
+                        </div>
+                        <div class="right rrt rv1">
+                            <a href="/chances.html" class="text">Karyera markazi</a>
+                            <a href="#" class="text">Shaxsiy rivojlanish</a>
+                            <a href="/index.html#active-edu" class="text">Faol talabalik hayoti</a>
+                            <a href="#" class="text">AQSHda Work&Travel</a>
+                            <a href="#" class="text">Yaponiyada Work&Study</a>
+                            <a href="/jobs.html" class="text">Ish bilan ta’minlash</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="tel:+998712030220" class="tel-btn nav-text tel1">+(998) 71 203 02 20</a>
+                <div class="bottom-val">
+                    <a href="#" class="icon">
+                        <img src="./images/1.png" alt="1">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="./images/2.png" alt="1">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="./images/3.png" alt="1">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="./images/4.png" alt="1">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="DirectHeader">
+        <img src="./images/direct-head.png" alt="img" class="back-img">
+        <div class="wrapper">
+            <h1 class="title">Bizning universitet yo‘nalishlari</h1>
+        </div>
+    </div>
+
+    <div class="DirectFaculty">
+        <div class="wrapper gap-2">
+            <div class="categories round">
+                <img src="./images/logo1.png" alt="logo" class="logo">
+                <button class="faculty explore active-fac">Biznes boshqaruv</button>
+                <button class="faculty explore">Moliya</button>
+                <button class="faculty explore">IT sohalari</button>
+                <button class="faculty explore">Pedagogika</button>
+                <button class="faculty explore">Turizm</button>
+            </div>
+            <div class="infos drin active-infos">
+                <div class="texts gap">
+                    <h1 class="sub-title">Biznes boshqaruv</h1>
+                    <p class="nav-text">
+                        Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                        universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori
+                        saviyali mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan
+                        "amaliyotda qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va
+                        seminarlar o’z sohasida katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir
+                    </p>
+                    <a href="/application.html" class="explore">Ariza yuborish</a>
+                </div>
+                <img src="./images/direct-fac.png" alt="img" class="round">
+            </div>
+            <div class="infos drin">
+                <div class="texts gap">
+                    <h1 class="sub-title">Moliya</h1>
+                    <p class="nav-text">
+                        Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                        universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori
+                        saviyali mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan
+                        "amaliyotda qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va
+                        seminarlar o’z sohasida katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir
+                    </p>
+                    <a href="/application.html" class="explore">Ariza yuborish</a>
+                </div>
+                <img src="./images/direct-fac.png" alt="img" class="round">
+            </div>
+            <div class="infos drin">
+                <div class="texts gap">
+                    <h1 class="sub-title">IT sohalari</h1>
+                    <p class="nav-text">
+                        Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                        universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori
+                        saviyali mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan
+                        "amaliyotda qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va
+                        seminarlar o’z sohasida katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir
+                    </p>
+                    <a href="/application.html" class="explore">Ariza yuborish</a>
+                </div>
+                <img src="./images/direct-fac.png" alt="img" class="round">
+            </div>
+            <div class="infos drin">
+                <div class="texts gap">
+                    <h1 class="sub-title">Pedagogika</h1>
+                    <p class="nav-text">
+                        Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                        universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori
+                        saviyali mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan
+                        "amaliyotda qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va
+                        seminarlar o’z sohasida katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir
+                    </p>
+                    <a href="/application.html" class="explore">Ariza yuborish</a>
+                </div>
+                <img src="./images/direct-fac.png" alt="img" class="round">
+            </div>
+            <div class="infos drin">
+                <div class="texts gap">
+                    <h1 class="sub-title">Turizm</h1>
+                    <p class="nav-text">
+                        Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy
+                        universitet bo’lib, Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori
+                        saviyali mutaxassislar tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan
+                        "amaliyotda qo’llangan nazariya" metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va
+                        seminarlar o’z sohasida katta amaliy tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir
+                    </p>
+                    <a href="/application.html" class="explore">Ariza yuborish</a>
+                </div>
+                <img src="./images/direct-fac.png" alt="img" class="round">
+            </div>
+        </div>
+    </div>
+
+    <div class="DirectAdv parent">
+        <div class="wrapper gap">
+            <div class="info gap">
+                <img src="./images/direct-adv1.png" alt="img">
+                <h1 class="nav-title">Eng yaxshi odamlar bilan ishlang</h1>
+                <p class="nav-text">
+                    станьте частью инноваций, которые действительно улучшают жизни миллионов людей по
+                    всему миру
+                </p>
+            </div>
+            <div class="info gap">
+                <img src="./images/direct-adv2.png" alt="img">
+                <h1 class="nav-title">Global yetakchiga aylaning</h1>
+                <p class="nav-text">
+                    в своей области и выведите свою карьеру
+                    на новый уровень вместе с нами и с нашим дизайнером который все это делает
+                </p>
+            </div>
+            <div class="info gap">
+                <img src="./images/direct-adv3.png" alt="img">
+                <h1 class="nav-title">Qiziqarli narsalarni o'rganing</h1>
+                <p class="nav-text">
+                    возможности и подайте заявку, чтобы присоединиться к нам в команду где работают только один бедный
+                    дизайнер
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="DirectAbout parent">
+        <div class="wrapper gap">
+            <h1 class="st sub-title">Japan international university</h1>
+            <div class="line"></div>
+            <p class="nav-text">
+                А вот по мнению аналитиков побочный PR-эффект трансформирует рыночный мониторинг
+                активности, опираясь на опыт западных коллег. Фирменный стиль стабилизирует принцип восприятия, не
+                считаясь с затратами. Бренд индуцирует бизнес-план, не считаясь с затратами.
+            </p>
+            <p class="nav-text">
+                Спонсорство, суммируя приведенные примеры, как всегда непредсказуемо. В рамках концепции Акоффа и Стэка,
+                емкость рынка упорядочивает ролевой принцип восприятия. Программа лояльности искажает популярный
+                рекламный клаттер. Рекламный бриф без оглядки на авторитеты нейтрализует межличностный медиамикс.
+                Продвижение проекта осмысленно переворачивает коллективный анализ зарубежного опыта. Партисипативное
+                планирование, как принято считать, подсознательно охватывает BTL.
+            </p>
+            <p class="nav-text">
+                Медиавес правомочен. Сегмент рынка порождает креативный формат события. Маркетингово-ориентированное
+                издание стабилизирует институциональный пак-шот. Исходя из структуры пирамиды Маслоу, медиабизнес
+                основан на опыте. Стратегия сегментации отталкивает имидж.
+            </p>
+        </div>
+    </div>
+
+    <div class="DirectAny parent">
+        <div class="wrapper">
+            <img src="./images/direct-any1.png" alt="img" class="left-img ver1">
+            <img src="./images/direct-any3.png" alt="img" class="left-img ver2">
+            <div class="infos gap-2">
+                <div class="info round gap pd-2">
+                    <img src="./images/direct-icon1.png" alt="img">
+                    <h3 class="min-title">Bitiruvchilarni Yaponiyada ish bilan ta'minlash</h3>
+                    <p class="nav-text">
+                        Bitirgandan so'ng, universitet Yaponiyada ish bilan ta'minlashda yordam beradi
+                        va bundan keyin bitiruvchi yig'ilgan summani
+                    </p>
+                </div>
+                <div class="info round gap pd-2">
+                    <img src="./images/direct-icon2.png" alt="img">
+                    <h3 class="min-title">Yaponiyada o'qib va ishlash imkoniyati</h3>
+                    <p class="nav-text">
+                        Universitetimizda yuqori malakali o'qituvchilar dars beradi va sizga sifatli ta'lim berish uchun
+                        har 6 oyda chet eldan malaka oshirib kelishadi.
+                        Siz 2- kursdan so‘ng o‘z sohangiz bo‘yicha tajribalar olasiz
+                    </p>
+                </div>
+                <div class="info round gap pd-2">
+                    <img src="./images/direct-icon3.png" alt="img">
+                    <h3 class="min-title">CATS tizimida xalqaro ta'lim</h3>
+                    <p class="nav-text">
+                        Siz universitetimizni bitirganingizdan so'ng sizga O'zbekistonda
+                        va Yaponiyada tan olinadigan diplomga ega bo'lasiz
+                    </p>
+                </div>
+                <img src="./images/direct-any2.png" alt="img" class="right-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="HomeAbout parent">
+        <div class="info gap">
+            <img src="./images/about.png" alt="img" class="back-img">
+            <h1 class="sub-title">Sizni universitetimiz qiziqtirgan bo'lsa hoziroq ariza yuboring</h1>
+            <a href="/application.html" class="explore">Ro‘yxatdan otish</a>
+        </div>
+    </div>
+
+    <div class="EduPost parent">
+        <div class="wrapper gap-2">
+            <div class="info gap">
+                <div class="imgs">
+                    <img src="./images/post1.png" alt="img" class="img round">
+                    <a href="#" class="icon">
+                        <img src="./images/explore.png" alt="icon">
+                    </a>
+                </div>
+                <h3 class="min-title">TA'LIM TIZIMI</h3>
+                <p class="nav-text">
+                    Japan International university dagi ta’lim tizmi, qanday o’qitiladi qanday
+                    afzalliklarga ega ...
+                </p>
+            </div>
+            <div class="info gap">
+                <div class="imgs">
+                    <img src="./images/post1.png" alt="img" class="img round">
+                    <a href="#" class="icon">
+                        <img src="./images/explore.png" alt="icon">
+                    </a>
+                </div>
+                <h3 class="min-title">KUNDUZGI TA’LIM</h3>
+                <p class="nav-text">
+                    Kunduzgi ta’limda hozirda 5 ta yo‘nalishni o‘z ichiga oladi. Bular Biznes boshqaruv, Moliya...
+                </p>
+            </div>
+            <div class="info gap">
+                <div class="imgs">
+                    <img src="./images/post1.png" alt="img" class="img round">
+                    <a href="#" class="icon">
+                        <img src="./images/explore.png" alt="icon">
+                    </a>
+                </div>
+                <h3 class="min-title">TO‘LOVLAR</h3>
+                <p class="nav-text">
+                    Japan International university dagi kontrakt tolovlari narxnomasi
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Footer parent">
+        <div class="contacts">
+            <h1 class="nav-title">Sizda qandaydir savol bormi?</h1>
+            <input type="text" class="min-text round pd-1" placeholder="Ismingiz">
+            <div class="flag">
+                <img src="./images/flag.png" alt="flag">
+                <input type="tel" class="min-text round pd-1" placeholder="+998">
+            </div>
+            <button class="explore">Yuborish</button>
+        </div>
+        <div class="wrapper">
+            <div class="main">
+                <div class="tools">
+                    <div class="tool">
+                        <a href="/edusystem.html" class="text">JIU ta’lim</a>
+                        <a href="/edusystem.html" class="foot-text">Ta’lim tizimi</a>
+                        <a href="/directions.html" class="foot-text">Yo‘nalishlar</a>
+                        <a href="/edutype.html" class="foot-text">Kunduzgi ta’lim</a>
+                        <a href="/edutype.html" class="foot-text">Sirtqi ta’lim</a>
+                        <a href="/edutype.html" class="foot-text">Kechki ta’lim</a>
+                        <a href="/payment.html" class="foot-text">To‘lovlar</a>
+                    </div>
+                    <div class="tool">
+                        <a href="/about.html" class="text">Biz haqimizda</a>
+                        <a href="/about.html" class="foot-text">Nima uchun JIU</a>
+                        <a href="/academicteam.html" class="foot-text">Akademik jamoa</a>
+                        <a href="/academicteam.html" class="foot-text">Administrativ jamoa</a>
+                        <a href="#" class="foot-text">Litsenziya</a>
+                        <a href="/jobs.html" class="foot-text">Bo‘sh ish o‘rinlari</a>
+                        <a href="/communicate.html" class="foot-text">Biz bilan bo‘g‘laning</a>
+                    </div>
+                    <div class="tool">
+                        <a href="/application.html" class="text">Qabul</a>
+                        <a href="/application.html" class="foot-text">Ariza to‘ldirish</a>
+                        <a href="#" class="foot-text">Kirish imtihoni</a>
+                        <a href="/index.html#grant" class="foot-text">Grantlar</a>
+                        <a href="#" class="foot-text">O‘qishni ko‘chirish</a>
+                    </div>
+                    <div class="tool">
+                        <a href="/chances.html" class="text">Imkoniyatlar</a>
+                        <a href="/chances.html" class="foot-text">Karyera markazi</a>
+                        <a href="#" class="foot-text">Shaxsiy rivojlanish</a>
+                        <a href="/index.html#active-edu" class="foot-text">Faol talabalik hayoti</a>
+                        <a href="#" class="foot-text">AQSHda Work&Travel</a>
+                        <a href="#" class="foot-text">Yaponiyada Work&Study</a>
+                        <a href="/jobs.html" class="foot-text">Ish bilan ta’minlash</a>
+                    </div>
+                </div>
+                <img src="./images/logo1.png" alt="logo" class="logo">
+            </div>
+            <div class="socials">
+                <div class="left">
+                    <div class="imgs">
+                        <a href="#">
+                            <img src="./images/1.png" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="./images/2.png" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="./images/3.png" alt="img">
+                        </a>
+                        <a href="#">
+                            <img src="./images/4.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="tels gap">
+                        <a href="tel:+998712030220" class="foot-text">
+                            <img src="./images/5.png" alt="img">
+                            +(998) 71 203 02 20
+                        </a>
+                        <a href="mailto:admission@jiuuni.uz" class="foot-text">
+                            <img src="./images/6.png" alt="img">
+                            admission@jiuuni.uz
+                        </a>
+                        <a href="#" class="foot-text">
+                            <img src="./images/7.png" alt="img">
+                            Sadriddin Ayni ko'chasi, Samarqand shahri
+                        </a>
+                    </div>
+                </div>
+                <div class="right text">©2023 JIU</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- all pages js -->
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/faculties.js"></script>
+    <!-- all pages js -->
+
+</body>
+
+</html>

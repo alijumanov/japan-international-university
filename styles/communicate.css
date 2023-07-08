@@ -1,0 +1,231 @@
+.Communicate {
+    padding-top: 5vw;
+    background-color: #f5f5f5;
+}
+
+.Communicate .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Communicate .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Communicate .head .links {
+    display: flex;
+    align-items: center;
+}
+
+.Communicate .head .links .foot-text {
+    color: #8F8F8F;
+}
+
+.Communicate .head .links .foot-text:hover {
+    color: #2B82BC;
+}
+
+.Communicate .head .links span {
+    width: 4px;
+    height: 4px;
+    background-color: #8F8F8F;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.Communicate .contacts {
+    gap: 4vw;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.Communicate .contacts .img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.Communicate .contacts .texts {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.Communicate .contacts .texts .info {
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Communicate .contacts .texts .info .text {
+    font-weight: 700;
+}
+
+.Communicate .contacts .texts .info .foot-text {
+    opacity: 0.5;
+    color: #0E0E0E;
+}
+
+.Communicate .ariza {
+    display: grid;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    background-color: white;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.Communicate .ariza .texts {
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Communicate .ariza .img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.Communicate .ariza .explore {
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #2B82BC;
+}
+
+.Communicate .ariza .foot-text {
+    color: #656B70;
+    padding-top: 1.5vw;
+    border-top: solid 1px #ECECEC;
+}
+
+.Communicate .field {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Communicate .field label {
+    color: #30363D;
+    font-weight: 700;
+}
+
+.Communicate .field .input {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    border: solid 1px #ECECEC;
+    background-color: transparent;
+}
+
+.Communicate .field .input:focus {
+    border: solid 1px #30363D;
+}
+
+.Communicate .field .tel-input {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Communicate .field .tel-input .flag {
+    left: 1vw;
+    width: 1.5vw;
+    border-radius: 3px;
+    position: absolute;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.Communicate .field .tel-input .input {
+    padding-left: 3vw;
+}
+
+@media (max-width:767px) {
+    .Communicate {
+        padding-top: 21vw;
+    }
+
+    .Communicate .head {
+        gap: 6vw;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .Communicate .head .sub-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .Communicate .contacts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Communicate .ariza {
+        display: flex;
+        border-radius: 5vw;
+        -webkit-border-radius: 5vw;
+        -moz-border-radius: 5vw;
+        -ms-border-radius: 5vw;
+        -o-border-radius: 5vw;
+        flex-direction: column-reverse;
+    }
+
+    .Communicate .ariza .texts {
+        gap: 5vw;
+    }
+
+    .Communicate .field {
+        gap: 3vw;
+    }
+
+    .Communicate .field .tel-input .flag {
+        left: 4vw;
+        width: 5vw;
+    }
+
+    .Communicate .field .tel-input .input {
+        padding-left: 11vw;
+    }
+
+    .Communicate .file-field .upload {
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+    }
+
+    .Communicate .file-field .upload .inside {
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+    }
+
+    .Communicate .file-field .upload .inside img {
+        max-width: 6vw;
+        min-width: 6vw;
+    }
+
+    .Communicate .ariza .foot-text {
+        padding-top: 3vw;
+    }
+}

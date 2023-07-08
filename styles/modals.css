@@ -1,0 +1,395 @@
+.OrderModal,
+.ReceptModal,
+.VacancyModal,
+.AppealModal,
+.ApplicationModal {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed;   popup ni qaysidir page da ishlatsangiz buni commentdan chiqarib qo'ying chunki popupning position ni fixed turishi kerk */
+    position: relative;
+    /* buni (postion: relative) ni esa commentga olib qo'ying yoki olib tashlang */
+}
+
+.popup {
+    z-index: 3;
+    width: 60vw;
+    padding: 2vw;
+    display: grid;
+    position: sticky;
+    border-radius: 2vw;
+    background-color: white;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.popup .icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.popup .icon img {
+    cursor: pointer;
+    max-width: 2.5vw;
+    min-width: 2.5vw;
+}
+
+.popup .imgs {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup .img {
+    max-width: 80%;
+    min-width: 80%;
+}
+
+.popup .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    color: #2B82BC;
+}
+
+.nav-text {
+    color: #939699;
+}
+
+.foot-text {
+    color: #594D6D;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+}
+
+.btns .checked {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.explore {
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #2B82BC;
+}
+
+.popup .field {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .field label {
+    color: #30363D;
+    font-weight: 700;
+}
+
+.popup .field .input {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    border: solid 1px #ECECEC;
+    background-color: transparent;
+}
+
+.popup .field .input:focus {
+    border: solid 1px #30363D;
+}
+
+.popup .field .tel-input {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popup .field .tel-input .flag {
+    left: 1vw;
+    width: 1.5vw;
+    border-radius: 3px;
+    position: absolute;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.popup .field .tel-input .input {
+    padding-left: 3vw;
+}
+
+.popup .file-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .file-field .file-input[type="file"] {
+    display: none;
+}
+
+.popup .file-field .upload {
+    display: flex;
+    font-weight: 400;
+    color: #2B82BC;
+    border-radius: 0.7vw;
+    -webkit-border-radius: 0.7vw;
+    -moz-border-radius: 0.7vw;
+    -ms-border-radius: 0.7vw;
+    -o-border-radius: 0.7vw;
+    background-color: #E6F6FD;
+}
+
+.popup .file-field .upload .inside {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 0.7vw;
+    -webkit-border-radius: 0.7vw;
+    -moz-border-radius: 0.7vw;
+    -ms-border-radius: 0.7vw;
+    -o-border-radius: 0.7vw;
+    flex-direction: column;
+    justify-content: center;
+    border: dashed 1px #2B82BC;
+}
+
+.popup .file-field .upload .inside img {
+    max-width: 2.5vw;
+    min-width: 2.5vw;
+}
+
+.pp .ver2 {
+    display: none;
+}
+
+.modalka {
+    z-index: 3;
+    width: 40vw;
+    padding: 2vw;
+    display: flex;
+    position: sticky;
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.file-name {
+    display: none;
+    align-items: center;
+    background-color: #F4F5F8;
+    justify-content: space-between;
+}
+
+.file-name .right {
+    display: flex;
+    align-items: center;
+}
+
+.file-name .file-img {
+    max-width: 3vw;
+    min-width: 3vw;
+}
+
+.file-name .trash-img {
+    max-width: 2vw;
+    min-width: 2vw;
+    cursor: pointer;
+}
+
+.file-name .nav-text {
+    color: #2B82BC;
+    margin-bottom: 5px;
+}
+
+.file-name .foot-text {
+    color: #2A2C2A;
+}
+
+.modalka .img {
+    max-width: 60%;
+    min-width: 60%;
+}
+
+.sub-title {
+    color: #2B82BC;
+}
+
+.modalka .sub-title {
+    padding: 0 5vw;
+}
+
+.modalka .icon {
+    top: 2vw;
+    right: 2vw;
+    width: 2.5vw;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media (max-width:767px) {
+    .popup {
+        width: 80%;
+        padding: 4vw;
+        display: flex;
+        border-radius: 4vw;
+        -webkit-border-radius: 4vw;
+        -moz-border-radius: 4vw;
+        -ms-border-radius: 4vw;
+        -o-border-radius: 4vw;
+        flex-direction: column-reverse;
+    }
+
+    .modalka {
+        width: 70%;
+        padding: 4vw;
+        border-radius: 4vw;
+        -webkit-border-radius: 4vw;
+        -moz-border-radius: 4vw;
+        -ms-border-radius: 4vw;
+        -o-border-radius: 4vw;
+    }
+
+    .modalka .sub-title {
+        padding: 0;
+    }
+
+    .modalka .icon {
+        top: 4vw;
+        right: 4vw;
+        width: 6vw;
+    }
+
+    .modalka .img {
+        max-width: 80%;
+        min-width: 80%;
+    }
+
+    .pp {
+        flex-direction: column;
+    }
+
+    .pp .sub-title {
+        text-align: left;
+        padding-right: 5vw;
+        margin-bottom: -8vw;
+        width: 100% !important;
+    }
+
+    .pp .ver1 {
+        display: none;
+    }
+
+    .pp .ver2 {
+        display: flex;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .explore {
+        width: 100%;
+    }
+
+    .title,
+    .tt {
+        text-align: center;
+    }
+
+    .popup .icon {
+        top: 4vw;
+        right: 4vw;
+        position: absolute;
+    }
+
+    .popup .icon img {
+        max-width: 6vw;
+        min-width: 6vw;
+    }
+
+    .popup .imgs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .popup .img {
+        max-width: 60%;
+        min-width: 60%;
+    }
+
+    .popup .field {
+        gap: 3vw;
+    }
+
+    .popup .field .tel-input .flag {
+        left: 4vw;
+        width: 5vw;
+    }
+
+    .popup .field .tel-input .input {
+        padding-left: 11vw;
+    }
+
+    .popup .file-field .upload {
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+    }
+
+    .popup .file-field .upload .inside {
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+    }
+
+    .popup .file-field .upload .inside img {
+        max-width: 6vw;
+        min-width: 6vw;
+    }
+
+    .file-name .file-img {
+        max-width: 8vw;
+        min-width: 8vw;
+    }
+
+    .file-name .trash-img {
+        max-width: 5vw;
+        min-width: 5vw;
+    }
+}

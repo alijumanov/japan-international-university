@@ -1,0 +1,335 @@
+.Application {
+    padding-top: 5vw;
+    background-color: #f5f5f5;
+}
+
+.Application .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Application .big-img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.Application .sub {
+    color: #2B82BC;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.Application .text {
+    color: #30363D;
+    font-weight: 700;
+}
+
+.Application .nav-text {
+    gap: 10px;
+    display: flex;
+    font-weight: 400;
+    color: #2A2C2A;
+    list-style: none;
+    align-items: center;
+}
+
+.Application ul li::before {
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #2A2C2A;
+}
+
+.Application .prim {
+    color: #2B82BC;
+}
+
+.Application .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Application .head .links {
+    display: flex;
+    align-items: center;
+}
+
+.Application .head .links .foot-text {
+    color: #8F8F8F;
+}
+
+.Application .head .links .foot-text:hover {
+    color: #2B82BC;
+}
+
+.Application .head .links span {
+    width: 4px;
+    height: 4px;
+    background-color: #8F8F8F;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.Application .forms {
+    display: flex;
+    margin-top: 1vw;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Application .forms .min-title {
+    color: #2B82BC;
+    font-weight: 700;
+    text-align: left;
+}
+
+.Application .forms .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.Application .forms .inputs .field {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Application .forms .inputs .field label {
+    color: #30363D;
+    font-weight: 700;
+}
+
+.Application .forms .inputs .field .input {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    border: solid 1px #ECECEC;
+    background-color: transparent;
+}
+
+.Application .forms .inputs .field .input:focus {
+    border: solid 1px #30363D;
+}
+
+.Application .forms .inputs .field .tel-input {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Application .forms .inputs .field .tel-input .flag {
+    left: 1vw;
+    width: 1.5vw;
+    border-radius: 3px;
+    position: absolute;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.Application .forms .inputs .field .tel-input .input {
+    padding-left: 3vw;
+}
+
+.Application .forms .selector {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Application .forms .selector .icon {
+    right: 1vw;
+    width: 1vw;
+    z-index: 0;
+    position: absolute;
+}
+
+.Application .forms .inputs .file-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Application .forms .inputs .file-field .file-input[type="file"] {
+    display: none;
+}
+
+.Application .forms .inputs .file-field .upload {
+    display: flex;
+    font-weight: 400;
+    color: #2B82BC;
+    border-radius: 0.7vw;
+    -webkit-border-radius: 0.7vw;
+    -moz-border-radius: 0.7vw;
+    -ms-border-radius: 0.7vw;
+    -o-border-radius: 0.7vw;
+    background-color: #E6F6FD;
+}
+
+.Application .forms .inputs .file-field .upload .inside {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 0.7vw;
+    -webkit-border-radius: 0.7vw;
+    -moz-border-radius: 0.7vw;
+    -ms-border-radius: 0.7vw;
+    -o-border-radius: 0.7vw;
+    flex-direction: column;
+    justify-content: center;
+    border: dashed 1px #2B82BC;
+}
+
+.Application .forms .inputs .file-field .upload .inside img {
+    max-width: 2.5vw;
+    min-width: 2.5vw;
+}
+
+.Application .forms .explore {
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #2B82BC;
+}
+
+.file-name {
+    display: none;
+    align-items: center;
+    background-color: #F4F5F8;
+    justify-content: space-between;
+}
+
+.file-name .right {
+    display: flex;
+    align-items: center;
+}
+
+.file-name .file-img {
+    max-width: 3vw;
+    min-width: 3vw;
+}
+
+.file-name .trash-img {
+    max-width: 2vw;
+    min-width: 2vw;
+    cursor: pointer;
+}
+
+.file-name .nav-text {
+    color: #2B82BC;
+    margin-bottom: 5px;
+}
+
+.file-name .foot-text {
+    color: #2A2C2A;
+}
+
+@media (max-width:767px) {
+    .Application {
+        padding-top: 20vw;
+    }
+
+    .Application .head {
+        gap: 6vw;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+    }
+
+    .Application .big-img {
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 70vw;
+        min-height: 70vw;
+        object-fit: cover;
+        border-radius: 3vw;
+        -webkit-border-radius: 3vw;
+        -moz-border-radius: 3vw;
+        -ms-border-radius: 3vw;
+        -o-border-radius: 3vw;
+    }
+
+    .Application .forms {
+        margin-top: 3vw;
+        margin-left: -5vw;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        width: calc(100% + 10vw);
+    }
+
+    .Application .forms .inputs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Application .forms .inputs .field {
+        gap: 3vw;
+    }
+
+    .Application .forms .selector .icon {
+        right: 4vw;
+        width: 3vw;
+    }
+
+    .Application .forms .inputs .field .tel-input .flag {
+        left: 4vw;
+        width: 5vw;
+    }
+
+    .Application .forms .inputs .field .tel-input .input {
+        padding-left: 11vw;
+    }
+
+    .Application .forms .inputs .file-field .upload {
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+    }
+
+    .Application .forms .inputs .file-field .upload .inside {
+        border-radius: 2vw;
+        -webkit-border-radius: 2vw;
+        -moz-border-radius: 2vw;
+        -ms-border-radius: 2vw;
+        -o-border-radius: 2vw;
+    }
+
+    .Application .forms .inputs .file-field .upload .inside img {
+        max-width: 6vw;
+        min-width: 6vw;
+    }
+
+    .file-name .file-img {
+        max-width: 8vw;
+        min-width: 8vw;
+    }
+
+    .file-name .trash-img {
+        max-width: 5vw;
+        min-width: 5vw;
+    }
+}

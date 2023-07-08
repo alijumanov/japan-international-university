@@ -1,0 +1,234 @@
+.Footer .contacts {
+    display: flex;
+    padding: 1.5vw 10vw;
+    align-items: center;
+    background-color: #2B82BC;
+    justify-content: space-between;
+}
+
+.Footer{
+    background-color: white;
+}
+
+.Footer .contacts .nav-title {
+    color: white;
+    margin-right: 2vw;
+}
+
+.Footer .contacts input {
+    width: 21vw;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    border: solid 1px white;
+    background-color: transparent;
+}
+
+.Footer .contacts .flag {
+    width: 21vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.Footer .contacts .flag img {
+    left: 1vw;
+    width: 1.5vw;
+    position: absolute;
+}
+
+.Footer .contacts .flag input {
+    padding-left: 3vw;
+}
+
+.Footer .contacts input::placeholder {
+    color: white;
+}
+
+.Footer .contacts .explore {
+    border: none;
+    cursor: pointer;
+    color: #2B82BC;
+    font-weight: 700;
+    background-color: white;
+}
+
+.Footer .wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.Footer .main {
+    display: flex;
+    padding: 2vw 0;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Footer .main .tools {
+    gap: 4vw;
+    display: flex;
+}
+
+.Footer .main .tools .tool {
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer .main .tools .tool .text {
+    color: #0E0E0E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Footer .main .tools .tool .foot-text {
+    color: #8F8F8F;
+    font-weight: 400;
+}
+
+.Footer .main .tools .tool .foot-text:hover {
+    text-decoration: underline;
+}
+
+.Footer .main .logo {
+    max-width: 8vw;
+    min-width: 8vw;
+}
+
+.Footer .socials {
+    display: flex;
+    padding: 2vw 0;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px #EAEAEA;
+}
+
+.Footer .socials img {
+    max-width: 2.8vw;
+    min-width: 2.8vw;
+}
+
+.Footer .socials .imgs {
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.Footer .socials .tels {
+    display: flex;
+    align-items: center;
+}
+
+.Footer .socials .tels .foot-text {
+    gap: 1vw;
+    display: flex;
+    max-width: 14vw;
+    align-items: center;
+}
+
+.Footer .socials .left {
+    gap: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .Footer .contacts {
+        gap: 4vw;
+        padding: 5vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Footer .contacts input {
+        width: 100%;
+        padding: 4.5vw;
+        font-size: 3.5vw;
+    }
+
+    .Footer .contacts .flag {
+        width: 100%;
+    }
+
+    .Footer .contacts .flag img {
+        width: 5vw;
+        left: 4.5vw;
+    }
+
+    .Footer .contacts .flag input {
+        padding-left: 12vw;
+    }
+
+    .Footer .contacts .explore {
+        padding: 3.5vw 5.5vw;
+    }
+
+    .Footer .main {
+        gap: 5vw;
+        padding: 6vw 0;
+        flex-direction: column-reverse;
+    }
+
+    .Footer .main .tools {
+        gap: 7vw;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .Footer .main .tools .tool {
+        gap: 3vw;
+    }
+
+    .Footer .main .tools .tool .text {
+        font-size: 4.5vw;
+    }
+
+    .Footer .main .logo {
+        max-width: 33vw;
+        min-width: 33vw;
+        margin-bottom: 3vw;
+    }
+
+    .Footer .socials {
+        gap: 5vw;
+        border: none;
+        padding: 4vw 0;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .Footer .socials .left {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .Footer .socials .right {
+        opacity: 0.4;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Footer .socials .tels {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Footer .socials .imgs {
+        gap: 3vw;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Footer .socials .tels .foot-text {
+        gap: 3vw;
+        max-width: 100%;
+    }
+
+    .Footer .socials img {
+        max-width: 11vw;
+        min-width: 11vw;
+    }
+}

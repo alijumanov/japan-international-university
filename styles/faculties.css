@@ -1,0 +1,131 @@
+.Faculties .decor {
+    top: 0;
+    right: 0;
+    width: 40%;
+    position: absolute;
+}
+
+.Faculties .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Faculties .wrapper .infos {
+    display: flex;
+    padding: 5vw 2vw;
+    margin-top: 1vw;
+    overflow: hidden;
+    position: relative;
+    padding-right: 65%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Faculties .wrapper .infos .back-img {
+    z-index: -1;
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+}
+
+.Faculties .wrapper .infos .nav-text {
+    color: white;
+    font-weight: 400;
+}
+
+.Faculties .wrapper .infos .sub-title {
+    color: white;
+}
+
+.Faculties .wrapper .infos .explore {
+    color: #2A2C2A;
+    font-weight: 700;
+    background-color: white;
+}
+
+.Faculties .wrapper .categories {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    margin-top: 2vw;
+    padding: 0.7vw 3vw;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: flex-start;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
+}
+
+.Faculties .wrapper .categories .logo {
+    max-width: 8vw;
+    min-width: 8vw;
+    margin-right: 2vw;
+}
+
+.Faculties .wrapper .categories .explore {
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #8F8F8F;
+    background-color: transparent;
+}
+
+.Faculties .wrapper .categories .explore.active-fac {
+    color: white;
+    background-color: #BA3139;
+}
+
+@media (max-width:767px) {
+    .Faculties .decor {
+        width: 100%;
+    }
+
+    .Faculties .wrapper .infos {
+        padding: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        padding-top: 85vw;
+    }
+
+    .Faculties .wrapper .infos .back-img {
+        height: 80vw;
+        border-radius: 4.5vw;
+        -webkit-border-radius: 4.5vw;
+        -moz-border-radius: 4.5vw;
+        -ms-border-radius: 4.5vw;
+        -o-border-radius: 4.5vw;
+    }
+
+    .Faculties .wrapper .infos .nav-text,
+    .Faculties .wrapper .infos .sub-title {
+        color: #0E0E0E;
+    }
+
+    .Faculties .wrapper .infos .explore {
+        color: white;
+        background-color: #2B82BC;
+    }
+
+    .Faculties .wrapper .categories {
+        width: 114%;
+        padding: 2vw 5vw;
+        margin-left: -7%;
+        overflow-x: auto;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .Faculties .wrapper .categories .explore {
+        min-width: 40%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .Faculties .wrapper .categories .logo {
+        display: none;
+    }
+}

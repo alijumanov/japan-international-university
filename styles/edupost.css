@@ -1,0 +1,61 @@
+.EduPost .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.EduPost .wrapper .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.EduPost .wrapper .info .min-title {
+    color: #0E0E0E;
+    text-align: center;
+}
+
+.EduPost .wrapper .info .nav-text {
+    color: #4B5157;
+    font-weight: 400;
+    text-align: center;
+}
+
+.EduPost .wrapper .info .imgs {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.EduPost .wrapper .info .imgs .img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 15vw;
+    min-height: 15vw;
+    object-fit: cover;
+}
+
+.EduPost .wrapper .info .icon {
+    z-index: 2;
+    width: 5vw;
+    position: absolute;
+}
+
+.EduPost .wrapper .info .icon img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+@media (max-width:767px) {
+    .EduPost .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .EduPost .wrapper .info .imgs .img {
+        max-height: 50vw;
+        min-height: 50vw;
+    }
+
+    .EduPost .wrapper .info .icon {
+        width: 13vw;
+    }
+}

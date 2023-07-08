@@ -1,0 +1,121 @@
+.Contacts .forms {
+    padding: 3vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    background-color: #2599C8;
+    justify-content: space-between;
+}
+
+.Contacts .forms .texts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Contacts .forms .texts .sub-title {
+    color: white;
+}
+
+.Contacts .forms .texts .nav-text {
+    margin-bottom: 1vw;
+    padding-right: 15vw;
+}
+
+.Contacts .forms .texts input {
+    width: 70%;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    border: solid 1px white;
+    background-color: transparent;
+}
+
+.Contacts .forms .texts .flag {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.Contacts .forms .texts .flag img {
+    left: 1vw;
+    width: 1.5vw;
+    position: absolute;
+}
+
+.Contacts .forms .texts .flag input {
+    padding-left: 3vw;
+}
+
+.Contacts .forms .texts input::placeholder {
+    color: white;
+}
+
+.Contacts .forms .texts .explore {
+    border: none;
+    cursor: pointer;
+    color: #2B82BC;
+    font-weight: 700;
+    background-color: white;
+}
+
+.Contacts .forms .imgs {
+    top: 0;
+    right: 0;
+    width: 46%;
+    height: 100%;
+    position: absolute;
+}
+
+.Contacts .forms .imgs img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+
+@media (max-width:767px) {
+    .Contacts .forms {
+        padding: 5vw;
+        padding-top: 70vw;
+    }
+
+    .Contacts .forms .texts {
+        width: 100%;
+    }
+
+    .Contacts .forms .texts .sub-title {
+        font-size: 6vw;
+    }
+
+    .Contacts .forms .texts .nav-text {
+        font-weight: 400;
+    }
+
+    .Contacts .forms .texts input {
+        width: 100%;
+        padding: 4.5vw;
+        font-size: 3.5vw;
+    }
+
+    .Contacts .forms .texts .flag img {
+        width: 5vw;
+        left: 4.5vw;
+    }
+
+    .Contacts .forms .texts .flag input {
+        padding-left: 12vw;
+    }
+
+    .Contacts .forms .texts .explore{
+        padding: 3.5vw 5.5vw;
+    }
+
+    .Contacts .forms .imgs {
+        left: 5%;
+        width: 90%;
+    }
+}

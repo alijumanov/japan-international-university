@@ -1,0 +1,70 @@
+.OurRektor .wrapper {
+    gap: 2vw;
+    z-index: 3;
+    display: flex;
+    position: sticky;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.OurRektor .wrapper .img {
+    bottom: 0;
+    width: 38%;
+    position: absolute;
+}
+
+.OurRektor .wrapper .texts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    padding-left: 47%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.OurRektor .wrapper .texts .sub-title {
+    color: white;
+}
+
+.OurRektor .wrapper .texts .explore {
+    color: white;
+    background-color: #2B82BC;
+}
+
+@media (max-width:767px) {
+
+    .OurRektor .back-img {
+        height: 157vw;
+    }
+
+    .OurRektor .wrapper {
+        gap: 6vw;
+        padding-top: 57vw;
+        flex-direction: column;
+    }
+
+    .OurRektor .wrapper .img {
+        width: auto;
+        height: 100vw;
+        position: relative;
+    }
+
+    .OurRektor .wrapper {
+        min-height: 130vw;
+    }
+
+    .OurRektor .wrapper .texts {
+        padding: 0;
+        color: #0E0E0E;
+    }
+
+    .OurRektor .wrapper .texts .min-title {
+        color: #2B82BC;
+    }
+
+    .OurRektor .wrapper .texts .sub-title {
+        color: #0E0E0E;
+    }
+}

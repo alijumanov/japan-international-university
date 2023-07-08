@@ -1,0 +1,30 @@
+.Partners .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.Partners .wrapper .imgs {
+    display: grid;
+    padding: 0.5vw 0;
+    margin-top: 0.5vw;
+    border-top: solid 1px #EAEAEA;
+    border-bottom: solid 1px #EAEAEA;
+    grid-template-columns: repeat(6, 6fr);
+}
+
+.Partners .wrapper .imgs img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+@media (max-width:767px) {
+    .Partners .wrapper .imgs {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .Partners .wrapper .imgs img {
+        max-width: 40%;
+        min-width: 40%;
+    }
+}

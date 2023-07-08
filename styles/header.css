@@ -1,0 +1,198 @@
+.Header .swiper-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Header .wrapper {
+    gap: 2vw;
+    z-index: 3;
+    display: flex;
+    position: sticky;
+    padding-right: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: calc(100vh + 7vw);
+}
+
+.Header .title,
+.Header .text {
+    color: white;
+}
+
+.Header .text {
+    z-index: 1;
+    padding-right: 50%;
+    position: relative;
+}
+
+.Header .explore {
+    z-index: 1;
+    font-weight: 700;
+    color: #2A2C2A;
+    position: relative;
+    background-color: white;
+}
+
+.Header .wrapper .symbol {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding-bottom: 16vw;
+    justify-content: center;
+}
+
+.Header .wrapper .symbol .img {
+    width: 13vw;
+    position: absolute;
+}
+
+.Header .decoration {
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 33vw;
+    height: 33vw;
+    position: absolute;
+}
+
+.Header .decoration .img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.Header .swiper-button-next,
+.Header .swiper-button-prev {
+    top: auto;
+    bottom: 7vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    display: flex;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px white;
+}
+
+.Header .swiper-button-next {
+    right: 15vw;
+}
+
+.Header .swiper-button-prev {
+    left: auto;
+    right: 21vw;
+}
+
+.Header .swiper-button-next .img,
+.Header .swiper-button-prev .img {
+    width: 50%;
+    position: absolute;
+}
+
+.Header .swiper-button-next::after,
+.Header .swiper-button-prev::after {
+    display: none;
+}
+
+.Header .swiper-button-next .img {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.Header .swiper-pagination-custom {
+    z-index: 3;
+    bottom: 13vw;
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    align-items: center;
+    padding-right: 15vw;
+    justify-content: flex-end;
+    font-family: 'Outfit', sans-serif;
+}
+
+.Header .swiper-pagination-custom span {
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.Header .swiper-pagination-custom .swiper-pagination-current {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .Header .wrapper {
+        gap: 4vw;
+        min-height: 650px;
+        padding-right: 5vw;
+    }
+
+    .Header .wrapper .symbol {
+        padding-right: 5vw;
+        justify-content: flex-end;
+    }
+
+    .Header .wrapper .symbol .img {
+        width: 23vw;
+    }
+
+    .Header .explore {
+        border-radius: 3vw;
+        -webkit-border-radius: 3vw;
+        -moz-border-radius: 3vw;
+        -ms-border-radius: 3vw;
+        -o-border-radius: 3vw;
+    }
+
+    .Header .decoration {
+        width: 90vw;
+        height: 90vw;
+        right: -14vw;
+        bottom: -10vw;
+    }
+
+    .Header .swiper-button-next,
+    .Header .swiper-button-prev {
+        width: 12vw;
+        height: 12vw;
+        bottom: 10vw;
+    }
+
+    .Header .swiper-button-next {
+        right: 20vw;
+    }
+
+    .Header .swiper-button-prev {
+        left: auto;
+        right: 37vw;
+    }
+
+    .Header .swiper-pagination-custom {
+        bottom: 25vw;
+        font-size: 3.5vw;
+        padding-right: 22vw;
+    }
+}

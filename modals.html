@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Modals</title>
+
+    <!-- all pages css -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/modals.css">
+    <!-- all pages css -->
+</head>
+
+<body>
+
+    <div class="OrderModal">
+        <div class="popup">
+            <div></div>
+            <div class="icon">
+                <img src="./images/close.png" alt="img">
+            </div>
+            <div class="texts gap">
+                <h1 class="title">Заказать звонок</h1>
+                <p class="nav-text tt">Kontaktlaringizni qoldiring</p>
+                <div class="field">
+                    <label for="fio" class="nav-text">Ism va Familya</label>
+                    <input type="text" name="ariza-fio" id="fio" placeholder="Istiqbol ko‘cha 2 uy" required
+                        class="input foot-text round pd-1">
+                </div>
+                <div class="field">
+                    <label for="phone-number" class="nav-text">Telefon raqam</label>
+                    <div class="tel-input">
+                        <img src="./images/flag.png" alt="img" class="flag">
+                        <input type="tel" name="ariza-phone-number" id="phone-number" placeholder="+998" required
+                            class="input foot-text round pd-1">
+                    </div>
+                </div>
+                <div class="btns gap">
+                    <button class="explore">Yuborish</button>
+                    <div class="checked">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox" class="foot-text">Shaxsiy ma'lumotlarimni qayta ishlashga rozilik
+                            beraman.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs">
+                <img src="./images/call-center.png" alt="img" class="img">
+            </div>
+        </div>
+        <div class="contrast"></div>
+    </div>
+
+    <div class="ReceptModal">
+        <div class="popup">
+            <div></div>
+            <div class="icon">
+                <img src="./images/close.png" alt="img">
+            </div>
+            <div class="texts gap">
+                <h1 class="title">Qabul bo‘shlandi!</h1>
+                <p class="nav-text tt" style="font-weight: 400;">
+                    Japan International University (JIU) - Yapon standartlariga asoslangan zamonaviy universitet bo’lib,
+                    Biznes Boshqaruv, Moliya, IT, Pedagogika hamda Turizm sohalarida yuqori saviyali mutaxassislar
+                    tayyorlashni o’z oldiga maqsad qilgan. JIU boshqa universitetlardan "amaliyotda qo’llangan nazariya"
+                    metodikasi bilan farqlanadi. Bu esa, barcha ma’ruza va seminarlar o’z sohasida katta amaliy
+                    tajribaga ega mutaxassislar tomonidan o’tiladi, deganidir
+                </p>
+                <a href="/application.html" class="explore">Ariza yuborish</a>
+            </div>
+            <div class="imgs">
+                <img src="./images/call-center1.png" alt="img" class="img">
+            </div>
+        </div>
+        <div class="contrast"></div>
+    </div>
+
+    <div class="VacancyModal">
+        <div class="popup gap-2 pp">
+            <div></div>
+            <div class="icon">
+                <img src="./images/close.png" alt="img">
+            </div>
+            <h1 class="sub-title" style="width: 200%; margin-top: -4vw;">Vakansiya uchun ariza formasi</h1>
+            <div></div>
+            <div class="texts gap">
+                <div class="field">
+                    <label for="fio" class="nav-text">Ism va Familya</label>
+                    <input type="text" name="ariza-fio" id="fio" placeholder="Istiqbol ko‘cha 2 uy" required
+                        class="input foot-text round pd-1">
+                </div>
+                <div class="field">
+                    <label for="phone-number" class="nav-text">Telefon raqam</label>
+                    <div class="tel-input">
+                        <img src="./images/flag.png" alt="img" class="flag">
+                        <input type="tel" name="ariza-phone-number" id="phone-number" placeholder="+998" required
+                            class="input foot-text round pd-1">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="tg-email" class="nav-text">Telegram username</label>
+                    <input type="text" name="ariza-tg-email" id="tg-email" placeholder="@darobov_b" required
+                        class="input foot-text round pd-1">
+                </div>
+                <div class="btns gap ver1">
+                    <button class="explore">Yuborish</button>
+                    <div class="checked">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox" class="foot-text">
+                            Shaxsiy ma'lumotlarimni qayta ishlashga rozilik
+                            beraman.
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs">
+                <div class="field file-field">
+                    <label for="resume" class="nav-text">Resume yuklang</label>
+                    <label for="resume" class="upload pd-1 foot-text">
+                        <div class="inside pd-1">
+                            <img src="./images/cloud.png" alt="img"> Faylni yuklang
+                        </div>
+                    </label>
+                    <input type="file" name="app-resume" id="resume" required class="file-input">
+                    <div class="file-name pd-1 gap round" id="file-name">
+                        <div class="right gap">
+                            <img src="./images/document1.png" alt="img" class="file-img">
+                            <div class="texts">
+                                <div id="file-result-name" class="nav-text"></div>
+                                <div class="foot-text">Pdf file</div>
+                            </div>
+                        </div>
+                        <img src="./images/trash.png" alt="img" class="trash-img">
+                    </div>
+                </div>
+            </div>
+            <div class="btns gap ver2">
+                <button class="explore">Yuborish</button>
+                <div class="checked">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox" class="foot-text">
+                        Shaxsiy ma'lumotlarimni qayta ishlashga rozilik
+                        beraman.
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="contrast"></div>
+    </div>
+
+    <div class="ApplicationModal">
+        <div class="modalka gap">
+            <img src="./images/close.png" alt="img" class="icon">
+            <img src="./images/modal.png" alt="img" class="img">
+            <p class="text">Murojaat qabul etildi</p>
+            <h1 class="sub-title" style="text-align: center;">Arizangiz qabul qilindi, qo'ng'iroqni kuting</h1>
+        </div>
+        <div class="contrast"></div>
+    </div>
+
+    <div class="AppealModal">
+        <div class="modalka gap">
+            <img src="./images/close.png" alt="img" class="icon">
+            <img src="./images/modal1.png" alt="img" class="img">
+            <p class="text">Murojaat qabul etildi</p>
+            <h1 class="sub-title" style="text-align: center;">Arizangiz qabul qilindi, qo'ng'iroqni kuting</h1>
+        </div>
+        <div class="contrast"></div>
+    </div>
+
+    <script src="./scripts/vacancymodal.js"></script>
+
+</body>
+
+</html>
